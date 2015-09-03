@@ -1,0 +1,20 @@
+import java.io.PrintStream;
+
+public class Proj02Runner<T1, T2> {
+    private T1 t1;
+    private T2 t2;
+
+    public Proj02Runner(T1 T1, T2 T2) {
+        this.t1 = T1;
+        this.t2 = T2;
+        System.out.println("Put your name here");
+    }
+
+    public T1 get1() {
+        return this.t1;
+    }
+
+    public T2 get2() {
+        return this.t2;
+    }
+}
