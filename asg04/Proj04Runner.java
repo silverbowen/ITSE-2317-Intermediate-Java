@@ -1,4 +1,4 @@
-/* asg03 for ITSE 2317
+/* asg04 for ITSE 2317
  * Author: William Bowen
  * per Prof. instructions, 
  * comments are minimal.
@@ -21,11 +21,11 @@ class Proj04Runner {
   } // end display method
 
 //      void display(ArrayList<?> list) { // wildcard Type
-//        System.out.println("Wiliam Bowen");
+//        System.out.println("William Bowen");
 //        for (Object n : list) {
 //            System.out.println(n.getClass());
 //        }
 //        System.out.println();
 //    } // end display method
-  
+
 } // end ProjRunner04 class
