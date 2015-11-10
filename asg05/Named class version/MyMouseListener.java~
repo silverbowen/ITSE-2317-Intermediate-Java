@@ -11,9 +11,9 @@ import javax.swing.*;
 
 class MyMouseListener extends MouseAdapter{
   
-  MyPanel ref;
+  Proj05Runner ref;
   
-  MyMouseListener(MyPanel ref){
+  MyMouseListener(Proj05Runner ref){
     this.ref = ref;
   }
   

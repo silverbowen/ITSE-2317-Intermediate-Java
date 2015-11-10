@@ -11,19 +11,13 @@ import javax.swing.*;
 
 class MyMouseListener extends MouseAdapter{
   
-  MyPanel ref;
-  
-  MyMouseListener(MyPanel ref){
-    this.ref = ref;
-  }
-  
   @Override
   public void mousePressed(MouseEvent e){
     
-    ref.x = e.getX();
-    ref.y = e.getY();
-     
-    ref.repaint(); 
+    ((Proj05Runner)e.getComponent()).x = e.getX();
+    ((Proj05Runner)e.getComponent()).y = e.getY();
+ 
+    ((Proj05Runner)e.getComponent()).repaint(); 
 
   }
 }

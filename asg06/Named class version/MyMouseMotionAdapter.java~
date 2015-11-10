@@ -9,21 +9,27 @@ import java.awt.*;
 import java.awt.event.*;
 
 class MyMouseMotionAdapter extends MouseMotionAdapter {
+ 
+  MyFrame ref;
+  
+  MyMouseMotionAdapter(MyFrame ref) {
+    this.ref = ref;
+  }
   
   @Override
   public void mouseDragged(MouseEvent e) {
-    e.getComponent().setForeground(Color.red);
-    ((MyFrame)e.getComponent()).x = e.getX();
-    ((MyFrame)e.getComponent()).y = e.getY();
-    e.getComponent().repaint();
+    ref.setForeground(Color.red);
+    ref.x = e.getX();
+    ref.y = e.getY();
+    ref.repaint();
   }
   
   @Override
   public void mouseMoved(MouseEvent e) {
-    e.getComponent().setForeground(Color.black);
-    ((MyFrame)e.getComponent()).x = e.getX();
-    ((MyFrame)e.getComponent()).y = e.getY();
-    e.getComponent().repaint();
+    ref.setForeground(Color.black);
+    ref.x = e.getX();
+    ref.y = e.getY();
+    ref.repaint();
   }
   
 }

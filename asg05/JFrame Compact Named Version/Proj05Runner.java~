@@ -5,28 +5,28 @@
  * comments are minimal.
  */
 
-import java.awt.*;
 import javax.swing.*;
 
 class Proj05Runner {
   
   public Proj05Runner() {
     
-    JFrame jFrame = new JFrame("William Bowen");    
-    MyPanel myPanel = new MyPanel();
-    JButton jButton = new JButton("Quit");
+    JFrame jFrame = new JFrame("William Bowen");
+    jFrame.setSize(200, 200);
     
-    jFrame.setSize(200, 200);    
+    JButton jButton = new JButton("Quit");
+    jFrame.add(jButton, "North");
+    
+    MyPanel myPanel = new MyPanel();
+    jFrame.add(myPanel, "Center");
+        
     jFrame.setDefaultCloseOperation(0);
     jFrame.setVisible(true);
-    
-    jFrame.add(jButton, "North");    
-    jFrame.add(myPanel, "Center");
     
     jButton.addActionListener(new MyActionListener());
     
     myPanel.addMouseListener(new MyMouseListener(myPanel));
-    
+
   }
   
 }

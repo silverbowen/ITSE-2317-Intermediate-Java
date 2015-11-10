@@ -19,7 +19,7 @@ class Proj06Runner extends Frame{
     
     myFrame.addWindowListener(new MyWindowAdapter());
     
-    myFrame.addMouseMotionListener(new MyMouseMotionAdapter());
+    myFrame.addMouseMotionListener(new MyMouseMotionAdapter(myFrame));
   } 
 
 }
