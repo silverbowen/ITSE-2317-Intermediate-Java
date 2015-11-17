@@ -1,0 +1,84 @@
+<!doctype html>
+<!--asg10 two forms-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ASG 10 - Two Forms</title>
+        <link rel="stylesheet" href="css-1.css">
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Form One</h1>
+        </header>
+        <section>
+            <p>Please enter your information.</p>
+        </section>
+        <form action="form-processor-one.jsp" method="get">
+            <table class="inline-block, center">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="firstName"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="lastName"></td>
+                </tr>
+                <tr>
+                    <td>College Name:</td>
+                    <td><input type="text" name="collegeName"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="text" name="phoneNumber"></td>
+                </tr>
+                <tr>
+                    <td>Get Button</td>
+                    <td><input type="submit" value="Submit Information"></td>
+                </tr>
+            </table>
+        </form>
+        <header>
+            <h1>Form Two</h1>
+        </header>
+        <section>
+            <p>Please pick your favorites.</p>
+        </section>
+        <form action="form-processor-two.jsp" method="post">
+                <table class="inline-block, center">
+                    <tr>
+                        <td>Favorite Sport:</td>
+                        <td><select name="favoriteSport">
+                                <option value="Football">Football</option>
+                                <option value="Baseball">Baseball</option>
+                                <option value="Basketball">Basketball</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Favorite Team:</td>
+                        <td><select name="favoriteTeam">
+                                <option value="Riverbats">Riverbats</option>
+                                <option value="Longhorns">Longhorns</option>
+                                <option value="Cowboys">Cowboys</option>
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td>Favorite Player:</td>
+                        <td><select name="favoritePlayer">
+                                <option value="Billy the Bat">Billy the Bat</option>
+                                <option value="Colt McCoy">Colt McCoy</option>
+                                <option value="Tony Romo">Tony Romo</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Reason Favorite:</td>
+                        <td><input type="text" name="reasonFavorite"></td>
+                    </tr>
+                    <tr>
+                        <td>Post Button</td>
+                        <td><input type="submit" value="Submit Favorites"></td>
+                    </tr>
+                </table>
+        </form>
+    </body>
+</html>

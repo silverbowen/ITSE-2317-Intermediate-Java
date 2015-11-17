@@ -1,0 +1,44 @@
+/* ccs-1.css R.L. Martinez */
+/* for HTML5 shiv */
+article, aside, figure, footer, header, hgroup, 
+menu, nav, section { display: block; }
+
+body {
+    width: 25%; /* originally 50% */
+    margin: 0 auto;
+    text-align: center;
+    background-color: gainsboro;
+}
+header {
+    text-align: center;
+    background-color: aqua;
+}
+nav { 
+    background-color: bisque;
+}
+section {
+    background-color: chartreuse
+}
+article {
+    background-color: dodgerblue;
+}
+aside {
+    background-color: firebrick;
+}
+footer {
+    background-color: green;
+}
+ul {
+    text-align: center;
+}
+table, th, td
+{
+    border: 1px solid black;
+}
+.center {
+    width: 200px;  /* originally 200px */
+    margin: 0 auto;
+}
+#th-id1 {
+    background-color: plum;
+}
